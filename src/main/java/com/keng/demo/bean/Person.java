@@ -21,9 +21,9 @@ import java.util.Map;
  * <author>          <time>          <version>          <desc>
  * 作者姓名           修改时间           版本号              描述
  */
-@PropertySource(value = {"classpath:applicateion.yml"})
+//@PropertySource(value = {"classpath:applicateion.yml"})
 @Component
-@ConfigurationProperties(prefix = "person")
+//@ConfigurationProperties(prefix = "person")
 public class Person {
     private String lastName;
     private Integer age;
