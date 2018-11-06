@@ -1,4 +1,3 @@
-
 server:
   port: 8000
   servlet:
@@ -11,7 +10,15 @@ spring:
       enabled: true
       charset: utf-8
       force: true
-debug: true # 开启 spring boot debug模式
+# debug: true # 开启 spring boot debug模式
+# logging:
+#   level: {com.keng.demo: trace}
+logging:
+  path: /spring/log
+  pattern:
+    console: %d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n # 日志输出格式
+    file: %d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n # 日志输出格式
+#   file: application.log
 ---
 server:
      port: 8080
