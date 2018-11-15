@@ -23,4 +23,6 @@ public class MyAppConfig {
         //将方法的返回值添加到容器中，容器中这个组件的id就是方法名
         return new HelloService();
     }
+
+
 }
