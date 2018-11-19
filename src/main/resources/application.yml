@@ -1,7 +1,5 @@
 server:
   port: 8000
-  servlet:
-    context-path: /demo # 项目访问路径
 spring:
   profiles:
     active: dev
