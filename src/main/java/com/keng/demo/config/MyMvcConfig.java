@@ -23,13 +23,12 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 public class MyMvcConfig extends WebMvcConfigurerAdapter {
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
-        //super.addViewControllers(registry);
         registry.addViewController("/testsuccess").setViewName("success");
-        registry.addViewController("/login").setViewName("login");
+        registry.addViewController("/index.html").setViewName("login1");
     }
 
-    @Bean
+   /**@Bean
     public LocaleResolver localeResolver(){
         return new MyLocaleResolver();
-    }
+    }**/
 }
