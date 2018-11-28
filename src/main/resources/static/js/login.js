@@ -24,7 +24,7 @@ $(function() {
 // 登录
 function login() {
 	$.ajax({
-		url: BASE_PATH + '/sso/login',
+		url: BASE_PATH + 'login',
 		type: 'POST',
 		data: {
 			username: $('#username').val(),
@@ -37,6 +37,7 @@ function login() {
 		},
 		success: function(json){
 			if (json.code == 1) {
+				console.log(json.data);
 				location.href = json.data;
 			} else {
 				alert(json.data);

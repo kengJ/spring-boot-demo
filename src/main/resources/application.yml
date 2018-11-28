@@ -8,6 +8,8 @@ spring:
       enabled: true
       charset: utf-8
       force: true
+  thymeleaf:
+    cache: false
   #messages: i18n.login
 # debug: true # 开启 spring boot debug模式
 
