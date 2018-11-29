@@ -22,7 +22,7 @@ $(function() {
 	});
 });
 // 登录
-function login() {
+/**function login() {
 	$.ajax({
 		url: BASE_PATH + 'login',
 		type: 'POST',
@@ -37,10 +37,8 @@ function login() {
 		},
 		success: function(json){
 			if (json.code == 1) {
-				console.log(json.data);
 				location.href = json.data;
 			} else {
-				alert(json.data);
 				if (10101 == json.code) {
 					$('#username').focus();
 				}
@@ -53,4 +51,18 @@ function login() {
 			console.log(error);
 		}
 	});
+}**/
+
+/**
+ * 功能描述: <br>
+ * 〈〉
+ * 替换原有登录函数,讲ajax请求改为form提交
+ * @param null
+ * @return:
+ * @since: 1.0.0
+ * @Author:heyanzhu
+ * @Date: 2018/11/29 15:33
+ */
+function login(){
+$('#loginBox').submit();
 }
