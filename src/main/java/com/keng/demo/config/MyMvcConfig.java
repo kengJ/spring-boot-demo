@@ -20,10 +20,6 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 //@EnableWebMvc
 @Configuration
 public class MyMvcConfig extends WebMvcConfigurerAdapter {
-    @Override
-    public void addViewControllers(ViewControllerRegistry registry) {
-        registry.addViewController("/testsuccess").setViewName("success");
-    }
 
     @Bean
     public WebMvcConfigurerAdapter webMvcConfigurerAdapter(){
@@ -39,7 +35,7 @@ public class MyMvcConfig extends WebMvcConfigurerAdapter {
             @Override
             public void addInterceptors(InterceptorRegistry registry) {
                 registry.addInterceptor(new LoginHandlerInterceptor()).addPathPatterns("/**")
-                        .excludePathPatterns("/index.html","/login","/");
+                        .excludePathPatterns("/index.html","/","/login");
             }
         };
         return adapter;
