@@ -22,7 +22,7 @@ public class EmployeeController {
      * @Author:heyanzhu
      * @Date: 2018/11/30 15:27
      */
-    @GetMapping("/emps")
+    @GetMapping("/emps1")
     public String list(){
         return "emp/list";
     }
