@@ -188,6 +188,7 @@ $(function() {
 // 选项卡对象
 var Tab = {
 	addTab: function(title, url) {
+		console.log(this);
 		var index = url.replace(/\./g, '_').replace(/\//g, '_').replace(/:/g, '_').replace(/\?/g, '_').replace(/,/g, '_').replace(/=/g, '_').replace(/&/g, '_');
 		// 如果存在选项卡，则激活，否则创建新选项卡
 		if ($('#tab_' + index).length == 0) {

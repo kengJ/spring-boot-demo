@@ -6,8 +6,6 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpSession;
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * FileName: LoginController
@@ -39,6 +37,6 @@ public class LoginController {
 
     @GetMapping("/personIndex")
     public String index(){
-        return "personIndex";
+        return "personIndex_bak";
     }
 }
